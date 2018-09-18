@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+        <div class="eight columns left-block">
+          <div class="progress progress_active">01 customer account</div>
+          <div class="progress">02 payment selection</div>
+          <div class="header">
+            <h1 class="header__title">Customer Account</h1>
+            <button class="header__add"><span>+</span></button>
+          </div>
+          <form class="checkout">
+                  <label class="checkout__account">
+                    <input type="radio" id="r1" name="contact" value="email" checked >
+                    <span class="checkout__checkmark"></span>
+                    <div class="checkout__top">
+                        <div class="checkout__currency-logo"><span>$</span></div>
+                        <p class="checkout__name">Kusturica d.i.o. Kusturica d.i.o.</p>
+                        <p class="checkout__payment-type">Wire transfer</p>
+                    </div>
+                    <div class="checkout__content">
+                        <p>Account No.: 3102570921</p>
+                        <p>Issuing bank: Siq banka, a.s.</p>
+                    </div>
+                    <div class="checkout__more">
+                      <ul class="checkout__options">
+                        <li class="checkout__edit">Edit</li>
+                        <li class="checkout__delete">Delete</li>
+                      </ul>
+                    </div>
+                  </label> 
+                  <label class="checkout__account">
+                    <input type="radio" id="r2" name="contact" value="phone">
+                    <span class="checkout__checkmark"></span>
+                    <div class="checkout__top">
+                        <div class="checkout__currency-logo"><span>€</span></div>
+                        <p class="checkout__name">Kusturica d.i.o.</p>
+                        <p class="checkout__payment-type">Wire transfer</p>
+                    </div> 
+                    <div class="checkout__content">
+                        <p>Account No.: 3102570921</p>
+                        <p>Issuing bank: Siq banka, a.s.</p>
+                    </div>
+                    <div class="checkout__more">
+                        <ul class="checkout__options">
+                          <li class="checkout__edit">Edit</li>
+                          <li class="checkout__delete">Delete</li>
+                        </ul>
+                      </div>
+                  </label>
+                  <div class="checkout__bottom">
+                      <a class="checkout__back" href="#">&larr; Return to shop</a>
+                      <button class="checkout__submit" type="submit">CONTINUE TO PAYMENT</button>
+                  </div>
+            
+          </form>
+        </div>
+        <div class="four columns cart-block">
+          <p class="cart-block__header">
+            <span class="cart-block__title">Shopping Cart</span>
+            <span class="cart-block__counter">2</span>
+          </p>
+          <ul class="cart-block__items">
+            <li class="cart-block__item">
+              <div class="cart-block__picture"></div>
+              <p class="cart-block__item-title">Glitch</p>
+              <p class="cart-block__item-subtitle">Christian Louboutin</p>
+              <p class="cart-block__item-price">$200.00</p>
+            </li>
+            <li class="cart-block__item">
+                <div class="cart-block__picture"></div>
+                <p class="cart-block__item-title">Bianca</p>
+                <p class="cart-block__item-subtitle">Christian Louboutin</p>
+                <p class="cart-block__item-price">$200.00</p>
+            </li>
+          </ul>
+          <ul class="cart-block__pay-details">
+            <li class="cart-block__pay-detail">
+              <span class="cart-block__detail-name">Subtotal</span><span class="cart-block__detail-price">$400.00</span>
+            </li>
+            <li class="cart-block__pay-detail">
+                <span class="cart-block__detail-name">Payment processing services 1%</span><span class="cart-block__detail-price">$4.00</span>
+            </li>
+            <li class="cart-block__pay-detail">
+                <span class="cart-block__detail-name">VAT</span><span class="cart-block__detail-price">$84.84</span>
+            </li>
+          </ul>
+          <p class="cart-block__pay-total">
+            <span class="cart-block__pay-total">Total</span>
+            <span class="cart-block__pay-total-price">$488.84</span>
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="popup-container">
+    <div class="popup-container__popup">
+      <div class="popup-container__top">
+        <p class="popup-container__title">Add Customer Account</p>
+        <a class="popup-container__close" href="#"></a>
+      </div>
+      <p class="popup-container__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <form>
+        <label class="labels" for="username">Name*</label>
+        <input id="username" name="addcustomer" class="inputs">
+        <label class="labels" for="address">Address*</label>
+        <input id="address" name="addcustomer" class="inputs">
+        <label class="labels" for="payment-method">Payment method*</label>
+        <select id="payment-method" name="addcustomer" class="selects">
+          <option value="1">Wired payment</option>
+          <option value="2" selected>Credit card</option>
+        </select>
+        <p class="popup-container__payment-message">Safe money transfer using your bank account. Visa, Maestro, Discover,
+            American Express.</p>
+
+        <div class="popup-container__bottom-container">
+          <div class="popup-container__inliner-card">
+              <label class="labels" for="card-number">Card number*</label>
+              <input id="card-number" name="addcustomer" class="inputs popup-container__card-number">
+          </div>   
+          <div class="popup-container__inliner-exp-date">
+              <label class="labels" for="exp-date">Expirity date*</label>
+              <input id="exp-date" name="addcustomer" class="inputs popup-container__exp-date">
+          </div>   
+          <div class="popup-container__inliner-cvv">
+              <label class="labels" for="cvv">CVV*</label>
+              <input id="cvv" name="addcustomer" class="inputs popup-container__cvv">
+          </div>  
+        </div>
+        <div class="popup-container__submit-container">
+            <a class="popup-container__cancel" href="#">cancel</a>
+            <input class="popup-container__submit" type="submit" value="Create">
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
